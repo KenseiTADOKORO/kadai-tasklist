@@ -7,11 +7,15 @@
     <table class="table table-bordered">
         <tr>
             <th>id</th>
-            <th>タスク</th>
+            <td>{{ $task->id }}</td>
         </tr>
         <tr>
-            <td>{{ $task->id }}</td>
+            <th>タスク</th>
             <td>{{ $task->content }}</td>
+        </tr>
+        <tr>
+            <th>進捗</th>
+            <td>{{ $task->status }}</td>
         </tr>
     </table>
     
